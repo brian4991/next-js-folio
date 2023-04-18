@@ -34,7 +34,7 @@ function Navbar() {
   return (
     <div id='navbar' className= {shadow ? 'fixed w-full bg-white h-20 shadow-xl z-[100]' : 'fixed w-full bg-white h-20 z[100]'}>
       <div className='flex justify-between items-center w-full h-full px-20 2xl:px-16'>
-        <Image src='/../public/assets/logo.jpg' alt='/' width='80' height='50' />
+        <Image src='/../public/assets/navlogo.jpg' alt='/' width='80' height='50' />
         <div>
           <ul className='hidden md:flex '>
             {menuItems.map(({ label, href }) => (
@@ -59,7 +59,7 @@ function Navbar() {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image src='/../public/assets/logo.jpg' alt='/' width='87' height='35' />
+              <Image src='/../public/assets/navlogo.jpg' alt='/' width='87' height='35' />
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer '>
                 <AiOutlineClose />
               </div>
