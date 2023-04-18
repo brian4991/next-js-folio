@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 function About() {
   return (
-    <div id='about' className=''>
-        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-            <div className='col-span-2'>
+    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+        <div className='col-span-2'>
             <p className='uppercase text-2xl px-2 tracking-widest text-blue-600'>About</p>
             <h2 className='py-4 px-2'>Who I Am</h2>
             <p className='py-4 px-2'>As a self-taught full-stack developer, I&apos;ve been writing code for several years now. I started by using Python as a data scientist consultant and then built trading scripts for cryptocurrencies, and since then, I&apos;ve expanded my skills to include Node.js, React.js, HTML, and CSS.</p>
