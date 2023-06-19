@@ -6,7 +6,10 @@ import ReactImg from '../public/assets/skills/react.png';
 import Tailwind from '../public/assets/skills/tailwind.png';
 import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
-import NextJS from '../public/assets/skills/nextjs.png'
+import NextJS from '../public/assets/skills/nextjs.png';
+import Vercel from '../public/assets/skills/vercel.png';
+
+
 
 const skills = [
   { name: 'HTML', image: Html },
@@ -16,6 +19,7 @@ const skills = [
   { name: 'Firebase', image: Firebase },
   { name: 'Github', image: Github },
   { name: 'Next', image: NextJS },
+  { name: 'Vercel', image: Vercel },
 ];
 
 const SkillItem = ({ name, image }) => {
