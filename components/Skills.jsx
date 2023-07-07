@@ -7,7 +7,7 @@ import Tailwind from '../public/assets/skills/tailwind.png';
 import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
-import Vercel from '../public/assets/skills/vercel.png';
+import Nest from '../public/assets/skills/NestJS.svg.png';
 
 
 
@@ -19,12 +19,12 @@ const skills = [
   { name: 'Firebase', image: Firebase },
   { name: 'Github', image: Github },
   { name: 'Next', image: NextJS },
-  { name: 'Vercel', image: Vercel },
+  { name: 'Nest', image: Nest },
 ];
 
 const SkillItem = ({ name, image }) => {
   return (
-    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+    <div className='p-6 shadow-xl bg-white rounded-xl hover:scale-105 ease-in duration-300'>
       <div className='grid grid-cols-2 gap-4 justify-center items-center'>
         <div className='m-auto'>
           <Image src={image} width='64' height='64' alt={name} />

@@ -4,7 +4,7 @@ import React from 'react';
 import trelloImg from '../public/assets/projects/trello.png';
 import dashboardImg from '../public/assets/projects/dashboard.png'
 import weatherappImg from '../public/assets/projects/weather-app.png'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import carHubImg from '../public/assets/projects/carhub.png'
 import ProjectItem from './Project';
 
 const Projects = () => {
@@ -20,15 +20,17 @@ const Projects = () => {
             title='Trello 2.0'
             backgroundImg={trelloImg}
             projectUrl='/trello'
-            tech='React JS'
+            tech='React JS / Nest js'
           />
+
           <ProjectItem
-            title='DashBoard App'
-            backgroundImg={dashboardImg}
-            projectUrl='/dashboard'
-            tech='React JS'
+            title='CarHub'
+            backgroundImg={carHubImg}
+            projectUrl='/carhub'
+            tech='React JS / API'
 
           />
+        
           <ProjectItem
             title='Weather App'
             backgroundImg={weatherappImg}
@@ -36,13 +38,15 @@ const Projects = () => {
             tech='React JS'
 
           />
+
           <ProjectItem
-            title='Twitch UI'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
-            tech='Next JS'
+            title='DashBoard App'
+            backgroundImg={dashboardImg}
+            projectUrl='/dashboard'
+            tech='React JS'
 
           />
+          
         </div>
       </div>
     </div>

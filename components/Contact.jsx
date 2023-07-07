@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
 
@@ -36,37 +34,19 @@ const Contact = () => {
               </div>
               <div>
                 <p className='uppercase pt-8'>Connect With Me</p>
-                <div className='flex items-center justify-between py-4'>
-                    <Link
-                    href=''
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn />
-                        </div>
-                    </Link>
-
-                    <Link
-                    href=''
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub />
-                        </div>
-                    </Link>
-
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail />
-                    </div>
-                    
-                    <Link href='/resume'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <BsFillPersonLinesFill />
-                        </div>
-                    </Link>
+                <div className='flex items-center justify-center space-x-4 py-4'>
+                  <div className='flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a href="https://github.com/brian4991" target="_blank" rel="noopener noreferrer">
+                      <FaGithub />
+                    </a>
+                  </div>
+                  <div className='flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a href="https://www.linkedin.com/in/brian-piorkowski-00b47693/" target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin />
+                    </a>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -75,7 +55,7 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
-                action=''
+                action='https://formspree.io/f/xvojozdl'
                 method='POST'
                 encType='multipart/form-data'
               >
@@ -104,7 +84,7 @@ const Contact = () => {
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='email'
-                    name='email'
+                    name='_replyto'
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -123,7 +103,7 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
-                <button className='w-full p-4 text-gray-100 mt-4'>
+                <button type='submit' className='w-full p-4 text-black mt-4'>
                   Send Message
                 </button>
               </form>
@@ -131,14 +111,14 @@ const Contact = () => {
           </div>
         </div>
         <div className='flex justify-center py-12'>
-        <Link href='/'>
-    <       div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <HiOutlineChevronDoubleUp
+          <Link href='/'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <HiOutlineChevronDoubleUp
                 className='text-[#5651e5]'
                 size={30}
-                />
-             </div>
-         </Link>
+              />
+            </div>
+          </Link>
 
         </div>
       </div>
